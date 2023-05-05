@@ -19,6 +19,9 @@ dependencies:
   autoprefixer:
     specifier: 10.4.14
     version: 10.4.14(postcss@8.4.23)
+  bright:
+    specifier: ^0.8.0
+    version: 0.8.0(react@18.2.0)
   contentlayer:
     specifier: ^0.3.2
     version: 0.3.2(esbuild@0.17.18)
@@ -65,6 +68,10 @@ packages:
     engines: {node: '>=6.9.0'}
     dependencies:
       regenerator-runtime: 0.13.11
+    dev: false
+
+  /@code-hike/lighter@0.6.6:
+    resolution: {integrity: sha512-dLkSpowP4NaWDUgay3Mebb8V+wYqVGRD+Tl8wSfWdtIH0z4OUU3UznSsmvvGpCgkdUIF5DhOPRGRowqkNWQsrg==}
     dev: false
 
   /@contentlayer/cli@0.3.2(esbuild@0.17.18):
@@ -1367,6 +1374,16 @@ packages:
     engines: {node: '>=8'}
     dependencies:
       fill-range: 7.0.1
+    dev: false
+
+  /bright@0.8.0(react@18.2.0):
+    resolution: {integrity: sha512-ChYAnh3UokVnDKTsZJojfqvO0z46QspQogCYpb6Z6l2lil0CtMxocKG1OEOWJRfHc6gtwGAfricWy69bzcpNwA==}
+    peerDependencies:
+      react: ^18
+    dependencies:
+      '@code-hike/lighter': 0.6.6
+      react: 18.2.0
+      server-only: 0.0.1
     dev: false
 
   /browserslist@4.21.5:
@@ -4140,6 +4157,10 @@ packages:
     hasBin: true
     dependencies:
       lru-cache: 6.0.0
+    dev: false
+
+  /server-only@0.0.1:
+    resolution: {integrity: sha512-qepMx2JxAa5jjfzxG79yPPq+8BuFToHd1hm7kI+Z4zAq1ftQiP7HcxMhDDItrbtwVeLg/cY2JnKnrcFkmiswNA==}
     dev: false
 
   /shebang-command@2.0.0:
