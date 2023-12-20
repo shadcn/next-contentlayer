@@ -23,9 +23,15 @@ dependencies:
   autoprefixer:
     specifier: 10.4.14
     version: 10.4.14(postcss@8.4.23)
+  clsx:
+    specifier: ^2.0.0
+    version: 2.0.0
   contentlayer:
     specifier: ^0.3.2
     version: 0.3.2(esbuild@0.17.18)(typescript@5.0.4)
+  date-fns:
+    specifier: ^3.0.1
+    version: 3.0.1
   eslint:
     specifier: 8.39.0
     version: 8.39.0
@@ -50,6 +56,9 @@ dependencies:
   react-dom:
     specifier: 18.2.0
     version: 18.2.0(react@18.2.0)
+  tailwind-merge:
+    specifier: ^2.1.0
+    version: 2.1.0
   tailwindcss:
     specifier: 3.3.2
     version: 3.3.2
@@ -69,6 +78,13 @@ packages:
     engines: {node: '>=6.9.0'}
     dependencies:
       regenerator-runtime: 0.13.11
+    dev: false
+
+  /@babel/runtime@7.23.6:
+    resolution: {integrity: sha512-zHd0eUrf5GZoOWVCXp6koAKQTfZV07eit6bGPmJgnZdnSAvvZee6zniW2XMF7Cmc4ISOOnPy3QaSiIJGJkVEDQ==}
+    engines: {node: '>=6.9.0'}
+    dependencies:
+      regenerator-runtime: 0.14.1
     dev: false
 
   /@contentlayer/cli@0.3.2(esbuild@0.17.18)(typescript@5.0.4):
@@ -1517,6 +1533,11 @@ packages:
       wrap-ansi: 7.0.0
     dev: false
 
+  /clsx@2.0.0:
+    resolution: {integrity: sha512-rQ1+kcj+ttHG0MKVGBUXwayCCF1oh39BF5COIpRzuCEv8Mwjv0XucrI2ExNTOn9IlLifGClWQcU9BrZORvtw6Q==}
+    engines: {node: '>=6'}
+    dev: false
+
   /color-convert@2.0.1:
     resolution: {integrity: sha512-RRECPsj7iu/xb5oKYcsFHSppFNnsj/52OVTRKb4zP5onXwVF3zVmmToNcOfGC+CRDpfK/U584fMg38ZHCaElKQ==}
     engines: {node: '>=7.0.0'}
@@ -1602,6 +1623,10 @@ packages:
   /data-uri-to-buffer@4.0.1:
     resolution: {integrity: sha512-0R9ikRb668HB7QDxT1vkpuUBtqc53YyAwMwGeUFKRojY/NWKvdZ+9UYtRfGmhqNbRkTSVpMbmyhXipFFv2cb/A==}
     engines: {node: '>= 12'}
+    dev: false
+
+  /date-fns@3.0.1:
+    resolution: {integrity: sha512-cr9igCUa0QSqgAMj7JOrYTY6Nh1rmyGrFDko7ADqfmaQqP/I2N4rlfrLl7AWuzDaoIpz6MNjoEcTPzgZYIrhnA==}
     dev: false
 
   /debug@3.2.7:
@@ -4150,6 +4175,10 @@ packages:
     resolution: {integrity: sha512-kY1AZVr2Ra+t+piVaJ4gxaFaReZVH40AKNo7UCX6W+dEwBo/2oZJzqfuN1qLq1oL45o56cPaTXELwrTh8Fpggg==}
     dev: false
 
+  /regenerator-runtime@0.14.1:
+    resolution: {integrity: sha512-dYnhHh0nJoMfnkZs6GmmhFknAGRrLznOu5nc9ML+EJxGvrx6H7teuevqVqCuPcPK//3eDrrjQhehXVx9cnkGdw==}
+    dev: false
+
   /regexp.prototype.flags@1.5.0:
     resolution: {integrity: sha512-0SutC3pNudRKgquxGoRGIz946MZVHqbNfPjBdxeOhBrdgDKlRoXmYLQN9xRbrR09ZXWeGAdPuif7egofn6v5LA==}
     engines: {node: '>= 0.4'}
@@ -4531,6 +4560,12 @@ packages:
     dependencies:
       '@pkgr/utils': 2.4.0
       tslib: 2.5.0
+    dev: false
+
+  /tailwind-merge@2.1.0:
+    resolution: {integrity: sha512-l11VvI4nSwW7MtLSLYT4ldidDEUwQAMWuSHk7l4zcXZDgnCRa0V3OdCwFfM7DCzakVXMNRwAeje9maFFXT71dQ==}
+    dependencies:
+      '@babel/runtime': 7.23.6
     dev: false
 
   /tailwindcss@3.3.2:
